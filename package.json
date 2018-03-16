@@ -1,6 +1,6 @@
 {
   "name": "smspro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "https://github.com/Jimjardland/smspro"
   },
-  "keywords": ["smspro", "sms"],
+  "keywords": [
+    "smspro",
+    "sms"
+  ],
   "author": "",
   "dependencies": {
     "btoa": "1.1.2",
