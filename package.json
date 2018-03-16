@@ -8,9 +8,13 @@
     "test:watch": "mocha test/**/*spec.js --reporter spec --watch",
     "lint": "eslint ."
   },
-  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jimjardland/smspro"
+  },
+  "keywords": ["smspro", "sms"],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "btoa": "1.1.2",
     "js2xmlparser": "3.0.0",
