@@ -1,0 +1,31 @@
+{
+  "name": "smspro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*spec.js --reporter spec --recursive",
+    "test:watch": "mocha test/**/*spec.js --reporter spec --watch",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "btoa": "1.1.2",
+    "js2xmlparser": "3.0.0",
+    "moment-timezone": "0.5.14",
+    "node-fetch": "2.1.1",
+    "telefonnummer": "1.1.0",
+    "xml2json": "0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "dedent": "^0.7.0",
+    "eslint": "4.18.2",
+    "mocha": "^5.0.4",
+    "proxyquire": "^2.0.0",
+    "sinon": "^4.4.6",
+    "sinon-chai": "^3.0.0"
+  }
+}
