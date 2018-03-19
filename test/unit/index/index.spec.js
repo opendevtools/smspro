@@ -35,9 +35,9 @@ describe('index', () => {
 
     xmlForSendSms = '<?xml version="1.0" encoding="ISO-8859-1"?><mobilectrl_sms><header><customer_id>kdot</customer_id><password>goodkid</password><valid_until>199406190006</valid_until><from_msisdn>07013371337</from_msisdn></header><payload><sms><message>Is your tests only Kendrick Lamar references?</message><to_msisdn>073013371337</to_msisdn></sms></payload></mobilectrl_sms>'
 
-    SmsPro = proxyquire(process.cwd() + '/lib/index', {
+    SmsPro = proxyquire(process.cwd() + '/index', {
       'node-fetch': fetch,
-      './util/smsPro': smsProUtil
+      './lib/util/smsPro': smsProUtil
     })
   })
 

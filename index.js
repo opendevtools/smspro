@@ -1,10 +1,10 @@
-const smsProUtil = require('./util/smsPro')
+const smsProUtil = require('./lib/util/smsPro')
 const fetch = require('node-fetch')
 const btoa = require('btoa')
 
-function smsPro ({customerId, username, customerPassword, endpoint, password}) {
-  this.customerId = customerId
-  this.customerPassword = customerPassword
+function smsPro ({customerId, customerid, username, customerPassword, customerpassword, endpoint, password}) {
+  this.customerId = customerId || customerid
+  this.customerPassword = customerPassword || customerpassword
   this.username = username
   this.password = password
   this.endpoint = endpoint

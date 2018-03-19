@@ -9,11 +9,11 @@ This is created to send and recieve sms from https://www.smspro.se
 const SmsPro = require('smspro')
 
 const smsPro = new SmsPro({
-  "customerId": "",
-  "customerPassword": "",
-  "username": "",
-  "password": "",
-  "endpoint": ""
+  'customerId': '',
+  'customerPassword': '',
+  'username': '',
+  'password': '',
+  'endpoint': ''
 })
 
 await smsPro.sendMtSms({ to: ['phoneNumber'], from: 'from', message: 'k-dot is amazing'})
@@ -37,9 +37,9 @@ smsPro.parseIncoming(xml)
 ```
 Returns:
 ```javascript
- { 
+{
   message: 'Text message from mobile',
   phoneNumber: '+46708651052',
   phoneNumberNormalized: '0708651052'
- }
+}
 ```
