@@ -13,12 +13,13 @@ const smsPro = new SmsPro({
   'customerPassword': '',
   'username': '',
   'password': '',
-  'endpoint': ''
+  'endpoint': '',
+  'from': ''
 })
 
-await smsPro.sendMtSms({ to: ['phoneNumber'], from: 'from', message: 'k-dot is amazing'})
+await smsPro.sendMtSms({ to: ['phoneNumber'], message: 'k-dot is amazing'})
 ```
-Returns: 
+Returns:
 ```javascript
 {
   datetime: '2018-03-16 15:58:19',
@@ -42,4 +43,20 @@ Returns:
   phoneNumber: '+46708651052',
   phoneNumberNormalized: '0708651052'
 }
+```
+
+### Send flash sms
+```javascript
+const SmsPro = require('smspro')
+
+const smsPro = new SmsPro({
+  'customerId': '',
+  'customerPassword': '',
+  'username': '',
+  'password': '',
+  'endpoint': '',
+  'from': ''
+})
+
+await smsPro.sendFlashSms({ to: ['phoneNumber'], message: 'k-dot is amazing'})
 ```
