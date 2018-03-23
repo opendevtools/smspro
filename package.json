@@ -1,12 +1,20 @@
 {
   "name": "smspro",
   "version": "1.0.5",
-  "description": "",
+  "description": "This is created to send and recieve sms from https://www.smspro.se",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Jimjardland/smspro/issues"
+  },
   "scripts": {
     "test": "mocha test/**/*spec.js --reporter spec --recursive",
     "test:watch": "mocha test/**/*spec.js --reporter spec --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "example": "node example.js",
+    "postversion": "git push origin master --follow-tags"
   },
   "license": "MIT",
   "repository": {
@@ -17,7 +25,7 @@
     "smspro",
     "sms"
   ],
-  "author": "",
+  "author": "Jimmy Jardland <jimmy@jardland.se>",
   "dependencies": {
     "btoa": "1.1.2",
     "js2xmlparser": "3.0.0",

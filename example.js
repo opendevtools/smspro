@@ -1,4 +1,4 @@
-const SmsPro = require('./lib/index')
+const SmsPro = require('./index')
 
 const smsPro = new SmsPro({
   "customerId": "",

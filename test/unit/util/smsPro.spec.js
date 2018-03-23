@@ -34,7 +34,7 @@ describe('util/smsPro', () => {
             <from_msisdn>07013371337</from_msisdn>
         </header>
         <payload>
-            <sms>
+            <sms msg_class='1'>
                 <message>Is your tests only Kendrick Lamar references?</message>
                 <to_msisdn>073013371337</to_msisdn>
             </sms>
@@ -65,6 +65,30 @@ describe('util/smsPro', () => {
         customerId: 'kdot',
         mobilectrlId: '9123812831238'
       })
+    })
+  })
+
+  describe('#flashSms', () => {
+    it('returns a correctly foramted xml', () => {
+      const response = smsProUtil.flashSms({ customerId: 'kdot', customerPassword: 'goodkid', from: '07013371337', to: ['073013371337'], message: 'Is your tests only Kendrick Lamar references?'})
+
+      expect(dedent(response)).to.eql(dedent(`
+        <?xml version='1.0'?>
+        <mobilectrl_sms>
+        <header>
+            <customer_id>kdot</customer_id>
+            <password>goodkid</password>
+            <valid_until>201803161608</valid_until>
+            <from_msisdn>07013371337</from_msisdn>
+        </header>
+        <payload>
+            <sms msg_class='0'>
+                <message>Is your tests only Kendrick Lamar references?</message>
+                <to_msisdn>073013371337</to_msisdn>
+            </sms>
+        </payload>
+        </mobilectrl_sms>
+      `))
     })
   })
 })

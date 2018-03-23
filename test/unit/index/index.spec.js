@@ -24,7 +24,8 @@ describe('index', () => {
     smsProUtil = {
       parseResult: spy(),
       parseIncoming: spy(),
-      mtSms: spy()
+      mtSms: spy(),
+      flashSms: spy()
     }
 
     response = {
@@ -109,6 +110,27 @@ describe('index', () => {
       await smsPro.parseIncoming()
 
       expect(smsProUtil.parseIncoming).callCount(1)
+    })
+  })
+
+  describe('#flashSms', async () => {
+    beforeEach(() => {
+      let smsPro
+    })
+
+    it('calls send', async () => {
+      smsPro = new SmsPro(config)
+      smsPro.send = spy()
+      await smsPro.sendFlashSms({ to: ['073013371337'], from: '1337', message: 'who doesnt love k-dot though?'})
+
+      expect(smsPro.send).callCount(1)
+    })
+
+    it('calls smsProUtil to get an xml', async () => {
+      smsPro = new SmsPro(config)
+      await smsPro.sendFlashSms({ to: ['073013371337'], from: '1337', message: 'who doesnt love k-dot though?'})
+
+      expect(smsProUtil.flashSms).callCount(1)
     })
   })
 })
