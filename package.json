@@ -1,6 +1,6 @@
 {
   "name": "smspro",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is created to send and recieve sms from https://www.smspro.se",
   "main": "index.js",
   "engines": {
