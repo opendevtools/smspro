@@ -1,11 +1,18 @@
-const SmsPro = require('./index')
+const SmsPro = require('.')
 
 const smsPro = new SmsPro({
-  'customerId': '',
-  'customerPassword': '',
-  'username': '',
-  'password': '',
-  'endpoint': ''
+  from: '71220',
+  customerid: '',
+  customerpassword: '',
+  username: '',
+  password: '',
+  endpoint: '',
+  shouldMockSms: false,
+  logstashUrl: 'localhost',
+  logstashPort: 5505,
 })
 
-smsPro.sendMtSms({ to: ['phoneNumber'], message: 'k-dot is amazing'})
+smsPro.sendMtSms({
+  to: [''],
+  message: 'test',
+})

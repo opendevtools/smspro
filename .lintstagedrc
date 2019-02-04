@@ -1,0 +1,15 @@
+{
+  "linters": {
+    "**/*.+(js|jsx|ts|tsx|json|md)": ["prettier --write", "git add"],
+    "**/*.+(js|jsx)": [
+      "eslint --fix"
+    ],
+    "**/*.+(ts|tsx)": [
+      "tslint --fix"
+    ],
+    "**/*.+(js|jsx|ts|tsx)": [
+      "git add",
+      "npm run test -- --bail --findRelatedTests"
+    ]
+  }
+}

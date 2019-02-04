@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+
+# env
+.env
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Distribution folders
+build
+dist
+lib/bs
+lib/js
+
+# Dependency directory
+node_modules
+bower_components
+
+# Local stuff
+.merlin
+.vscode
+config.json
+
+# Testing
+cypress/videos
+
+# mac
+.bsb.lock
+.DS_Store

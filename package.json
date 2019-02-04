@@ -4,7 +4,7 @@
   "description": "This is created to send and recieve sms from https://www.smspro.se",
   "main": "index.js",
   "engines": {
-    "node": ">=8.1.4"
+    "node": ">=10.12.0"
   },
   "bugs": {
     "url": "https://github.com/Jimjardland/smspro/issues"
@@ -13,8 +13,7 @@
     "test": "mocha test/**/*spec.js --reporter spec --recursive",
     "test:watch": "mocha test/**/*spec.js --reporter spec --watch",
     "lint": "eslint .",
-    "example": "node example.js",
-    "postversion": "git push origin master --follow-tags"
+    "example": "node example.js"
   },
   "license": "MIT",
   "repository": {
@@ -28,6 +27,8 @@
   "author": "Jimmy Jardland <jimmy@jardland.se>",
   "dependencies": {
     "btoa": "1.1.2",
+    "bunyan": "1.8.12",
+    "bunyan-logstash-tcp": "1.0.0",
     "js2xmlparser": "3.0.0",
     "moment-timezone": "0.5.14",
     "node-fetch": "2.1.1",
@@ -35,10 +36,13 @@
     "xml2json": "0.11.0"
   },
   "devDependencies": {
+    "@iteam/eslint-config-iteam-node": "^0.1.0",
     "chai": "^4.1.2",
     "dedent": "^0.7.0",
-    "eslint": "4.18.2",
+    "eslint": "^4.18.2",
+    "lint-staged": "^8.1.0",
     "mocha": "^5.0.4",
+    "prettier": "^1.15.3",
     "proxyquire": "^2.0.0",
     "sinon": "^4.4.6",
     "sinon-chai": "^3.0.0"
