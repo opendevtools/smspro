@@ -1,5 +1,8 @@
 # Smspro
 
+[![](https://github.com/opendevtools/smspro/workflows/Release/badge.svg)](https://github.com/opendevtools/smspro/actions?workflow=Release)
+[![npm (scoped)](https://img.shields.io/npm/v/smspro)](https://npm.im/smspro)
+
 This is created to send and recieve sms from https://www.smspro.se
 
 
