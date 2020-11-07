@@ -27,26 +27,26 @@
   ],
   "author": "Jimmy Jardland <jimmy@jardland.se>",
   "dependencies": {
-    "btoa": "1.1.2",
-    "bunyan": "1.8.12",
+    "btoa": "1.2.1",
+    "bunyan": "1.8.14",
     "bunyan-logstash-tcp": "1.0.0",
-    "js2xmlparser": "3.0.0",
-    "moment-timezone": "0.5.14",
-    "node-fetch": "2.1.1",
-    "telefonnummer": "1.1.0",
-    "xml2json": "0.11.0"
+    "js2xmlparser": "4.0.1",
+    "moment-timezone": "0.5.31",
+    "node-fetch": "2.6.1",
+    "telefonnummer": "2.1.0",
+    "xml2json": "0.12.0"
   },
   "devDependencies": {
     "@iteam/eslint-config-iteam-node": "^0.1.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
     "dedent": "^0.7.0",
-    "eslint": "^4.18.2",
+    "eslint": "7.13.0",
     "is-ci-cli": "2.1.2",
     "jest": "26.6.3",
     "jest-watch-typeahead": "0.6.1",
-    "lint-staged": "^8.1.0",
+    "lint-staged": "10.5.1",
     "mockdate": "3.0.2",
-    "prettier": "^1.15.3"
+    "prettier": "2.1.2"
   }
 }
