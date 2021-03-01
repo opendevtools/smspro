@@ -47,6 +47,6 @@
     "jest-watch-typeahead": "0.6.1",
     "lint-staged": "10.5.1",
     "mockdate": "3.0.2",
-    "prettier": "2.1.2"
+    "prettier": "2.2.1"
   }
 }
